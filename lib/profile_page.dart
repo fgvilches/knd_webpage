@@ -1,4 +1,5 @@
 import 'dart:html' as html;
+
 import 'package:flutter_web/material.dart';
 import 'package:myportfolio/responsive_widget.dart';
 
@@ -100,7 +101,7 @@ class PKDot extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Text( 
+        Text(
           "",
           textScaleFactor: 2,
           style: TextStyle(
@@ -116,7 +117,7 @@ class PKDot extends StatelessWidget {
           width: 8,
           //decoration: BoxDecoration(
             //shape: BoxShape.circle,
-            //color: Colors.yellow,
+            //color: Colors.orange,
           //),
         ),
       ],
@@ -133,7 +134,7 @@ class NavButton extends StatelessWidget {
       {Key key,
       @required this.text,
       @required this.onPressed,
-      this.color = Colors.red})
+      this.color = Colors.yellow})
       : super(key: key);
 
   @override
@@ -158,7 +159,8 @@ class ProfileInfo extends StatelessWidget {
             ? MediaQuery.of(context).size.height * 0.25
             : MediaQuery.of(context).size.width * 0.25,
         decoration: BoxDecoration(
-          //color: Colors.yellow,
+          //backgroundBlendMode: BlendMode.luminosity,
+          //color: Colors.deepOrange,
 //            borderRadius: BorderRadius.circular(40),
           shape: BoxShape.circle,
           image: DecorationImage(
@@ -179,7 +181,7 @@ class ProfileInfo extends StatelessWidget {
       ),
       Text(
         "KND\nCOLLECTIVE🏀",
-        textScaleFactor: 5,
+        textScaleFactor: 4.5,
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
@@ -189,21 +191,26 @@ class ProfileInfo extends StatelessWidget {
         height: 10,
       ),
       Text(
-        "Colectivo artístico chileno orientado a la música urbana creado el 9 de agosto\nde 2019 por Wanted y Bona con base de operaciones en Santiago. Si bien se nota\nuna clara influencia por la música latina mezclada con R&B, cada artista dentro\ndel grupo es un mundo y tiene sus propias referencias a la hora de crear.",
+        "Colectivo artístico chileno orientado a la música urbana\n"
+        "creado el 9 de agosto de 2019 por Wanted y Bona con base\n"
+        "de operaciones en Santiago.\n"
+        "Si bien se nota una clara influencia por la música latina\n"
+        "mezclada con R&B, cada artista dentro del grupo es un mundo\n"
+        "y tiene sus propias referencias a la hora de crear.\n",
         softWrap: true,
         textScaleFactor: 1.5,
         style: TextStyle(color: Colors.white70),
       ),
-      SizedBox(	
-        height: 20,	
+      SizedBox(
+        height: 20,
       ),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           RaisedButton(
             shape: StadiumBorder(),
-            child: Text("Resume"),
-            color: Colors.yellowAccent,
+            child: Text("Last track"),
+            color: Colors.orange,
             onPressed: () {
               html.window.open(
                   "https://google-developers.appspot.com/community/experts/directory/profile/profile-pawan_kumar",
@@ -216,13 +223,13 @@ class ProfileInfo extends StatelessWidget {
           ),
           OutlineButton(
             borderSide: BorderSide(
-              color: Colors.yellowAccent,
+              color: Colors.yellow,
             ),
             shape: StadiumBorder(),
-            child: Text("Say Hi!"),
-            color: Colors.yellowAccent,
+            child: Text("Join Us!"),
+            color: Colors.yellow[300],
             onPressed: () {
-              html.window.open("https://pawan.live", "Pk");
+              html.window.open("https://", "Pk");
             },
             padding: EdgeInsets.all(10),
           )
@@ -258,23 +265,23 @@ class SocialInfo extends StatelessWidget {
   List<Widget> socialMediaWidgets() {
     return [
       NavButton(
-        text: "IG",
+        text: "Instagram",
         onPressed: () {
-          html.window.open("https://instagram.com/kndcl", "Instagram");
+          html.window.open("https://Instagram.com/kndcl", "Insta");
         },
         color: Colors.red,
       ),
       NavButton(
-        text: "YT",
+        text: "Youtube",
         onPressed: () {
           html.window.open("https://youtube.com/", "Youtube");
         },
         color: Colors.red,
       ),
       NavButton(
-        text: "SC",
+        text: "Soundcloud",
         onPressed: () {
-          html.window.open("https://soundcloud.com", "Soundcloud");
+          html.window.open("https://soundcloud.com/", "Souncloud");
         },
         color: Colors.red,
       ),
