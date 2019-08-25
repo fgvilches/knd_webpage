@@ -188,8 +188,8 @@ class ProfileInfo extends StatelessWidget {
       SizedBox(
         height: 10,
       ),
-      Text(
-        "Colectivo artístico chileno orientado a la música urbana creado el 9 de agosto de 2019 por Wanted y Bona con base de operaciones en Santiago. Si bien se nota una clara influencia por la música latina mezclada con R&B, cada artista dentro del grupo es un mundo y tiene sus propias referencias a la hora de crear.",
+      Text("""
+Colectivo artístico chileno orientado a la música urbana creado el 9 de agosto\nde 2019 por Wanted y Bona con base de operaciones en Santiago. Si bien se nota\nuna clara influencia por la música latina mezclada con R&B, cada artista dentro\ndel grupo es un mundo y tiene sus propias referencias a la hora de crear.""",
         softWrap: true,
         textScaleFactor: 1.5,
         style: TextStyle(color: Colors.white70),
