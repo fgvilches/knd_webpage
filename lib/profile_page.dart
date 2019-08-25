@@ -1,5 +1,4 @@
 import 'dart:html' as html;
-
 import 'package:flutter_web/material.dart';
 import 'package:myportfolio/responsive_widget.dart';
 
@@ -8,21 +7,21 @@ class ProfilePage extends StatelessWidget {
 
   List<Widget> navButtons() => [
         NavButton(
-          text: "about",
+          text: "releases",
           onPressed: () {
-            html.window.open("https://pawan.live", "Pk");
+            html.window.open("https://", "Pk");
           },
         ),
         NavButton(
-          text: "work",
+          text: "roster",
           onPressed: () {
-            html.window.open("https://pawan.live", "Pk");
+            html.window.open("https://", "Pk");
           },
         ),
         NavButton(
-          text: "contact",
+          text: "contact us",
           onPressed: () {
-            html.window.open("https://pawan.live", "Pk");
+            html.window.open("https://", "Pk");
           },
         ),
       ];
@@ -101,8 +100,8 @@ class PKDot extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Text(
-          "PK MTECHVIRAL",
+        Text( 
+          "",
           textScaleFactor: 2,
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -115,10 +114,10 @@ class PKDot extends StatelessWidget {
           duration: Duration(seconds: 1),
           height: 8,
           width: 8,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.orange,
-          ),
+          //decoration: BoxDecoration(
+            //shape: BoxShape.circle,
+            //color: Colors.yellow,
+          //),
         ),
       ],
     );
@@ -134,7 +133,7 @@ class NavButton extends StatelessWidget {
       {Key key,
       @required this.text,
       @required this.onPressed,
-      this.color = Colors.orange})
+      this.color = Colors.red})
       : super(key: key);
 
   @override
@@ -159,12 +158,11 @@ class ProfileInfo extends StatelessWidget {
             ? MediaQuery.of(context).size.height * 0.25
             : MediaQuery.of(context).size.width * 0.25,
         decoration: BoxDecoration(
-          backgroundBlendMode: BlendMode.luminosity,
-          color: Colors.deepOrange,
+          //color: Colors.yellow,
 //            borderRadius: BorderRadius.circular(40),
           shape: BoxShape.circle,
           image: DecorationImage(
-            image: AssetImage("pk.jpg"),
+            image: AssetImage("knd_logo.jpg"),
             alignment: Alignment.center,
             fit: BoxFit.cover,
           ),
@@ -177,10 +175,10 @@ class ProfileInfo extends StatelessWidget {
       Text(
         "Hi there! My name is",
         textScaleFactor: 2,
-        style: TextStyle(color: Colors.orange),
+        style: TextStyle(color: Colors.yellow),
       ),
       Text(
-        "Pawan\nKumar",
+        "KND\nCOLLECTIVE🏀",
         textScaleFactor: 5,
         style: TextStyle(
           color: Colors.white,
@@ -191,9 +189,7 @@ class ProfileInfo extends StatelessWidget {
         height: 10,
       ),
       Text(
-        "A Google Developer Expert for Flutter, Dart & Web Tech.\n"
-        "I am also a youtuber having MTechViral youtube channel\n"
-        "where I make tutorials for technology.",
+        "Colectivo Artístico, blablabla",
         softWrap: true,
         textScaleFactor: 1.5,
         style: TextStyle(color: Colors.white70),
@@ -207,7 +203,7 @@ class ProfileInfo extends StatelessWidget {
           RaisedButton(
             shape: StadiumBorder(),
             child: Text("Resume"),
-            color: Colors.red,
+            color: Colors.yellowAccent,
             onPressed: () {
               html.window.open(
                   "https://google-developers.appspot.com/community/experts/directory/profile/profile-pawan_kumar",
@@ -220,11 +216,11 @@ class ProfileInfo extends StatelessWidget {
           ),
           OutlineButton(
             borderSide: BorderSide(
-              color: Colors.red,
+              color: Colors.yellowAccent,
             ),
             shape: StadiumBorder(),
             child: Text("Say Hi!"),
-            color: Colors.red,
+            color: Colors.yellowAccent,
             onPressed: () {
               html.window.open("https://pawan.live", "Pk");
             },
@@ -262,31 +258,31 @@ class SocialInfo extends StatelessWidget {
   List<Widget> socialMediaWidgets() {
     return [
       NavButton(
-        text: "Github",
+        text: "IG",
         onPressed: () {
-          html.window.open("https://github.com/iampawan", "Git");
+          html.window.open("https://instagram.com/kndcl", "Instagram");
         },
-        color: Colors.blue,
+        color: Colors.red,
       ),
       NavButton(
-        text: "Twitter",
+        text: "YT",
         onPressed: () {
-          html.window.open("https://twitter.com/imthepk", "Twitter");
+          html.window.open("https://youtube.com/", "Youtube");
         },
-        color: Colors.blue,
+        color: Colors.red,
       ),
       NavButton(
-        text: "Facebook",
+        text: "SC",
         onPressed: () {
-          html.window.open("https://facebook.com/thepawankumaar", "Fb");
+          html.window.open("https://soundcloud.com", "Soundcloud");
         },
-        color: Colors.blue,
+        color: Colors.red,
       ),
     ];
   }
 
   Widget copyRightText() => Text(
-        "Pawan Kumar ©️2019",
+        "fgvilches ©️ 2019",
         textAlign: TextAlign.center,
         style: TextStyle(
           color: Colors.grey,
