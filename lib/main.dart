@@ -1,14 +1,14 @@
 import 'package:flutter_web/material.dart';
-import 'package:knd_webpage/PrincipalPage.dart';
+import 'package:myportfolio/profile_page.dart';
 
-main() async {
+main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key key}) : super(key: key);
 
-  @override 
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColorDark: Colors.black,
         fontFamily: "GoogleSansRegular",
       ),
-      home: PrincipalPage();
+      home: ProfilePage(),
     );
   }
 }
