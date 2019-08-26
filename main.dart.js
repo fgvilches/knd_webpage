@@ -43350,7 +43350,7 @@ $C:"$0",
 $R:0,
 $S:0}
 K.EF.prototype={
-$0:function(){C.P.fp(window,"https://","Pk")},
+$0:function(){C.P.fp(window,"https://forms.gle/jS4faXx1pmBvPWDr8","Unete al Colectivo!")},
 $C:"$0",
 $R:0,
 $S:0}
