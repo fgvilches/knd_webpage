@@ -274,14 +274,14 @@ class SocialInfo extends StatelessWidget {
       NavButton(
         text: "Youtube",
         onPressed: () {
-          html.window.open("https://youtube.com/", "Youtube");
+          html.window.open("https://www.youtube.com/channel/UCe-lqo2bDaE041DLpsvXY7w?", "Youtube");
         },
         color: Colors.red,
       ),
       NavButton(
         text: "Soundcloud",
         onPressed: () {
-          html.window.open("https://soundcloud.com/", "Souncloud");
+          html.window.open("https://soundcloud.com/knd-collective", "Souncloud");
         },
         color: Colors.red,
       ),
