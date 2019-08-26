@@ -43345,7 +43345,7 @@ P:function(a){var u=this.c,t=[N.af],s=T.l3(H.e([this.y6(a),u],t),C.aj,C.ds,C.a3)
 if(typeof q!=="number")return q.p()
 return B.t9(s,T.yj(H.e([r,new T.cZ(null,q*0.1,null,null),u],t),C.aj,C.c5,C.a3))}}
 K.EE.prototype={
-$0:function(){C.P.fp(window,"https://google-developers.appspot.com/community/experts/directory/profile/profile-pawan_kumar","GDE")},
+$0:function(){C.P.fp(window,"http://","GDE")},
 $C:"$0",
 $R:0,
 $S:0}
