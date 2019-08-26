@@ -213,7 +213,7 @@ class ProfileInfo extends StatelessWidget {
             color: Colors.orange,
             onPressed: () {
               html.window.open(
-                  "https://google-developers.appspot.com/community/experts/directory/profile/profile-pawan_kumar",
+                  "http://",
                   "GDE");
             },
             padding: EdgeInsets.all(10),
