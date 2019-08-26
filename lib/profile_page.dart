@@ -229,7 +229,7 @@ class ProfileInfo extends StatelessWidget {
             child: Text("Join Us!"),
             color: Colors.yellow[300],
             onPressed: () {
-              html.window.open("https://", "Pk");
+              html.window.open("https://forms.gle/jS4faXx1pmBvPWDr8", "Unete al Colectivo!");
             },
             padding: EdgeInsets.all(10),
           )
