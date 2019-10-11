@@ -10,19 +10,19 @@ class ProfilePage extends StatelessWidget {
         NavButton(
           text: "releases",
           onPressed: () {
-            html.window.open("https://www.knd.world/releases", "Releases");
+            html.window.open("http://www.knd.world/releases", "Releases");
           },
         ),
         NavButton(
           text: "roster",
           onPressed: () {
-            html.window.open("https://www.knd.world/roster", "Roster");
+            html.window.open("http://www.knd.world/roster", "Roster");
           },
         ),
         NavButton(
           text: "contact us",
           onPressed: () {
-            html.window.open("https://www.knd.world/contact", "Contact");
+            html.window.open("https://forms.gle/fxVEE7WcYrZTZJ929", "Contact");
           },
         ),
       ];
@@ -213,7 +213,7 @@ class ProfileInfo extends StatelessWidget {
             color: Colors.orange,
             onPressed: () {
               html.window.open(
-                  "http://",
+                  "http://hyperurl.co/ojy0ev",
                   "GDE");
             },
             padding: EdgeInsets.all(10),
